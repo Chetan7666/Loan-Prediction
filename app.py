@@ -3,8 +3,14 @@ import pickle
 import pandas as pd
 import numpy as np
 
-
 from sklearn.preprocessing import StandardScaler
+from azure.storage.blob import BlobServiceClient, ContainerClient, BlobClient
+
+account_name = 'loanstorage1'
+account_key = '7+10ao6OuOhiFpdgR9el6xfGfar2SKU4t1zx9wsry+qgHJLrILrt5vl3iMVL+ptxCeEwnC260C//+AStoj5E1Q=='
+container_name = 'container1'
+blob_service_client = BlobServiceClient(account_url=f"https://{account_name}.blob.core.windows.net", credential=account_key)
+container_client = blob_service_client.get_container_client(container_name)
 
 
 #load models at top of app to load into memory only one time
@@ -133,7 +139,21 @@ def Loan_Application():
                                      original_input=output_dict,
                                      result=res,)
 
+        
+        blob_name = f"loan_application_{pd.Timestamp.now().strftime('%Y%m%d%H%M%S')}.json"
+        blob_data = {
+            'input_data': output_dict,
+            'result': res
+        }
+        blob_data_str = json.dumps(blob_data, indent=2)
 
+        blob_client = container_client.get_blob_client(blob_name)
+        blob_client.upload_blob(blob_data_str, overwrite=True)
+
+        return flask.render_template('Loan_Application.html', 
+                                     original_input=output_dict,
+                                     result=res,
+                                     blob_name=blob_name)
         
         # temp = pd.DataFrame(index=[1])
 
