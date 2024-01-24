@@ -1,91 +1,77 @@
-# LoanApplication_Prediction .
+<h1>Microsoft-Future-Ready-Talent-Virtual-Internship-Project</h1>
+<h2>Project Title: Loan Application Prediction</h2><b><a href="https://loanprediction01.azurewebsites.net/">Loan Application Approval</b></a>
+<br>
+<h2>Project Details</h2>
+<b>Project Demo URL :<br> https://loanpredictcc.azurewebsites.net/ <br>
+<b>Demo Video URL :<br> https://drive.google.com/drive/folders/1q-PvM3PzRrF8GtuFQC1YMuw2S-XJOZN5?usp=sharing <br>
+<b>Github Repository URL :<br> https://github.com/Chetan7666/Loan-Prediction <br>
+<b>Industry :</b> Finance Technology<br>
+<h2>Azure Services Used</h2>
+<h3>Core Azure Services:</h3>
+1. Azure App Service: Deployed the Python backend environment for loan application processing.<br>
+2. Azure Storage Service: Used to store the csv file in a Blob container for model persistence.<br>
+<h3>Azure AI Service</h3> 
+1. Azure Language Studio (Azure AI QnAMaker Service): Implemented a chatbot for user interactions and knowledge provision on the web app.
 
----
-If you like this project don't forget to star⭐⭐⭐ it.
----
+<h2>Problem Statement</h2>
+<p align="justify">Financial institutions receive a large volume of loan applications every day, each with a set of applicant-specific features. The challenge is to build a robust predictive model that can assess the likelihood of an applicant’s ability to repay the loan and automate the loan approval decision.</p>
 
+<h2>Project Description</h2>
+<p align="justify">
+Given a set of historical loan application data, predict whether a new loan application will be approved or not. The goal is to develop a model that can accurately assess the risk associated with a loan applicant and make a decision accordingly.
+The objective of this problem is to build a predictive model that can classify loan applications into two categories: approved and rejected. The model should be able to identify the key factors that influence the approval or rejection of a loan application and make accurate predictions based on those factors.
+</p>
 
-This is application demo of the Datathon form Dphi Machine Learning Bootcamp as Advanced Track [LINK](https://dphi.tech/bootcamps/machine-learning-online-bootcamp/)
+<b>Key Features :</b>
+<ul>
+    <li>Text Case Changing: Converts text between upper and lower cases.</li>
+    <li>Text Reversal: Reverses the order of inputted text.</li>
+    <li>Multilingual Translation: Utilizes Azure AI Translator Service to translate text into multiple languages.</li>
+    <li>Text Summary: Provides word and character summaries of inputted text.</li>
+</ul>
+<b>Future Enhancements :</b><br>
+<p align="justify">
+Looking into the future, the project has promising avenues for growth. Integrating advanced Azure Cognitive Services will enable deeper text analysis, like sentiment assessment and keyphrase extraction. Real-time collaboration features and user customization options are on the horizon, fostering a more interactive and personalized experience. Exploring Azure Logic Apps or Functions for automation and seamless integration with other services will enhance functionality. Continuous optimization for scalability and performance remains a priority, alongside potential machine learning integration for refined text handling. The development of APIs for third-party integration and a focus on accessibility, internationalization, user feedback implementation, and fortified security measures will further elevate the platform, ensuring it evolves in tandem with user needs while maintaining data integrity and user trust.</p>
 
-![Dphi Bootcamp](https://github.com/ayoub-berdeddouch/LoanApplication_Prediction/blob/main/dphi_bc_advanced.PNG)
+<h2>Core Azure Services</h2>
+<b>Azure App Service:</b><br><p align="justify">Hosts the Python backend to process loan applications and provide loan approval functionalities.</p>
+<b>Azure Storage Service:</b><br><p align="justify">Stores the pickle file in a Blob container for model persistence, accessed through access keys in the Python app.py code.</p>
+<b>Azure Language Studio (Azure AI QnAMaker Service):</b><br><p align="justify">Implemented for building and deploying a chatbot on the web app for user interactions and providing knowledge to user queries.</p>
 
+<h2>Azure AI Service</h2>
+<b>Azure Language Studio (Azure AI QnAMaker Service):</b><br><p align="justify">Utilized for implementing a chatbot on the web app for user interactions and providing knowledge to user queries.</p>
 
-[![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
+<h2>Other Azure Technologies / Services</h2>
+<b>Azure Functions:</b><br><p align="justify">Potential use for background processing tasks or additional functionalities.</p>
+<b>Azure Key Vault: </b><br><p align="justify">Securely manages keys, secrets, and certificates used in the application.</p>
 
+<h2>Screenshots</h2>
 
-# Demo
+<h3>Azure App Service</h3>
+<b>Description:</b><p align="justify">
+Azure App Service furnishes a scalable and dependable hosting setting for the Loan Application Approval, guaranteeing smooth deployment and uninterrupted availability to enhance the user experience.</p>
+<img src="static/Screenshot/App_service.jpg"></img><br>
 
-[link](https://loan-app-prediciton.herokuapp.com/)   [![Website perso.crans.org](https://img.shields.io/website-up-down-green-red/http/perso.crans.org.svg)](http://perso.crans.org/)
+<h3>Azure Storage Service</h3>
+<b>Description:</b><p align="justify">The project utilizes Azure Storage Service to securely store the pickle file in a Blob container, ensuring persistence and accessibility for loan application processing.</p>
+<img src="static/Screenshot/Storage_1.jpg"></img><br>
+<img src="static/Screenshot/Storage_2.jpg"></img><br>
+<img src="static/Screenshot/Storage_3.jpg"></img><br>
 
-![Loan App](https://github.com/ayoub-berdeddouch/LoanApplication_Prediction/blob/main/loan_app.PNG)
-![Loan App Predict](https://github.com/ayoub-berdeddouch/LoanApplication_Prediction/blob/main/make_pred.PNG)
+<h3>Azure Language Studio (Azure AI QnAMaker Service)</h3>
+<b>Description:</b><p align="justify">The Loan Application Approval relies on Azure Language Studio for implementing a chatbot, enhancing user interactions and providing knowledge to user queries on the web app.</p>
+<img src="static/Screenshot/chatbot.jpg" alt="azure-ai-qnamaker-service"></img><br>
 
-# Content
-
-A loan application is used by borrowers to apply for a loan. Through the loan application, borrowers reveal key details about their finances to the lender. The loan application is crucial to determining whether the lender will grant the request for funds or credit.
-
-![Loan Application](https://dphi-courses.s3.ap-south-1.amazonaws.com/Datathons/loan.png)
-
-# Problem Statement
-
-The director of SZE bank identified that going through the loan applications to filter the people who can be granted loans or need to be rejected is a tedious and time-consuming process. He wants to automate it and increase his bank’s efficiency. After talking around a bit, your name pops up as one of the few data scientists who can make this possible within a limited time. Will you help the director out? 
-
-
-# Objective
-
-The idea behind this ML project is to build an ML model and web application that the bank can use to classify if a user can be granted a loan or not.
-
-# Evaluation Criteria
-
-Submissions are evaluated using F1 Score.
-
-
-# Data 
-
-## About the Data
-The dataset contains information about Loan Applicants. There are 12 independent columns and 1 dependent column. This dataset includes attributes like Loan ID, gender, if the loan applicant is married or not, the level of education, applicant’s income etc. 
-
-To load the training data in your jupyter notebook, use the below command:
-
-import pandas as pd
-```
-loan_data  = pd.read_csv("https://raw.githubusercontent.com/dphi-official/Datasets/master/Loan_Data/loan_train.csv" )
-```
-
-## Data Description
-
-* Loan_ID: A unique ID assigned to every loan applicant
-* Gender: Gender of the applicant (Male, Female)
-* Married: The marital status of the applicant (Yes, No)
-* Dependents: No. of people dependent on the applicant (0,1,2,3+)
-* Education: Education level of the applicant (Graduated, Not Graduated)
-* Self_Employed: If the applicant is self-employed or not (Yes, No)
-* ApplicantIncome: The amount of income the applicant earns
-* CoapplicantIncome: The amount of income the co-applicant earns
-* LoanAmount: The amount of loan the applicant has requested for
-* Loan_Amount_Term: The  no. of days over which the loan will be paid
-* Credit_History: A record of a borrower's responsible repayment of debts (1- has all debts paid, 0- not paid)
-* Property_Area : The type of location where the applicant’s property lies (Rural, Semiurban, Urban)
-
-Target:
-
-* Loan_Status: Loan granted or not (Y, N)
+<h3>Working Live Project Display</h3>
+<b>Description:</b><p align="justify">I am providing the enclosed screenshot of the finalized operational website for your reference and review purposes.</p>
+<img src="static/Screenshot/Live_1.jpg"></img>
+<img src="static/Screenshot/Live_2.jpg"></img>
 
 
+<h3>Resource Visualizer</h3>
+<b>Description:</b><p align="justify">Attached herewith is the resource visualizer screenshot, presenting an overview of the utilized resources for reference and documentation purposes.</p>
+<img src="static/Screenshot/Resource.jpg"></img>
 
-## Test Dataset
-
-Load the test data (name it as test_data). You can load the data using the below command.
-```
-test_data = pd.read_csv('https://raw.githubusercontent.com/dphi-official/Datasets/master/Loan_Data/loan_test.csv')
-```
-Here the target column is deliberately not there as you need to predict it.
-
-
-# Author 
-
-[Ayoub Berdeddouch](https://github.com/ayoub-berdeddouch)
-
-# Licence 
-
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) 2020
+<h2>Final Project Statement</h2>
+<p align="justify">
+The Loan Application Approval Website is a comprehensive solution leveraging Azure services to offer users a versatile platform for efficient loan application processing, chatbot-driven user interactions, and knowledge provision. By harnessing the power of Azure App Service, Storage Service, and Language Studio, this project provides a seamless and scalable loan approval experience, catering to diverse user needs in a connected global landscape.</p>
