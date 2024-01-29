@@ -1,5 +1,5 @@
 <h1>Microsoft-Future-Ready-Talent-Virtual-Internship-Project</h1>
-<h2>Project Title: Loan Application Prediction</h2><b><a href="https://loanprediction01.azurewebsites.net/">Loan Application Approval</b></a>
+<h2>Project Title: Loan Application Prediction</h2><b><a href="https://loanpredictcc.azurewebsites.net/">Loan Application Approval</b></a>
 <br>
 <h2>Project Details</h2>
 <b>Project Demo URL :<br> https://loanpredictcc.azurewebsites.net/ <br>
